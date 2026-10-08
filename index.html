@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Satıcı Radar</title>
+  <meta name="description" content="Trendyol ve Hepsiburada ürün sayfalarında fiyat geçmişi, rakip satıcı fiyatları, tahmini satış ve hedef fiyat bildirimi.">
+  <style>
+    :root { --bg: #ffffff; --fg: #1f2937; --muted: #6b7280; --brand: #0f766e; --card: #f0fdfa; --border: #99f6e4; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0b1514; --fg: #e5e7eb; --muted: #9ca3af; --brand: #2dd4bf; --card: #102624; --border: #1f4f4a; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
+    h1 { font-size: 2.2rem; margin: 0 0 8px; color: var(--brand); }
+    .lead { font-size: 1.15rem; color: var(--muted); margin: 0 0 32px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 32px 0; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .card h2 { margin: 0 0 8px; font-size: 1.1rem; }
+    .card ul { margin: 0; padding-left: 20px; }
+    .btn { display: inline-block; padding: 10px 18px; border-radius: 8px; background: var(--brand); color: var(--bg); text-decoration: none; font-weight: 600; }
+    .btn[aria-disabled="true"] { opacity: .6; pointer-events: none; }
+    footer { margin-top: 48px; color: var(--muted); font-size: .9rem; }
+    a { color: var(--brand); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>📡 Satıcı Radar</h1>
+    <p class="lead">Trendyol ve Hepsiburada ürün sayfalarında fiyat geçmişi, rakip satıcı fiyatları, tahmini satış ve hedef fiyat bildirimi. Satıcılar ve akıllı alışveriş yapanlar için Chrome eklentisi.</p>
+
+    <!-- Chrome Web Store linki yayından sonra eklenecek -->
+    <a class="btn" href="#" aria-disabled="true">Chrome Web Store'da yakında</a>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Ücretsiz</h2>
+        <ul>
+          <li>Fiyat geçmişi ve grafik</li>
+          <li>Yorum, puan ve tahmini satış</li>
+          <li>Günde 10 ürün analizi</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>Pro</h2>
+        <ul>
+          <li>Sınırsız ürün analizi</li>
+          <li>Diğer satıcıların fiyatları</li>
+          <li>Hedef fiyat + masaüstü bildirimi</li>
+          <li>Excel (CSV) dışa aktarma</li>
+        </ul>
+      </section>
+    </div>
+
+    <p>Ürün verileriniz yalnızca kendi tarayıcınızda saklanır. Ayrıntılar: <a href="privacy.html">Gizlilik Politikası</a>.</p>
+
+    <footer>
+      Satıcı Radar; Trendyol veya Hepsiburada ile bağlantılı değildir. ·
+      <a href="https://github.com/Synex2/satici-radar-site/issues">İletişim</a>
+    </footer>
+  </main>
+</body>
+</html>
